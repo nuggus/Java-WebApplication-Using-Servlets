@@ -1,0 +1,183 @@
+<html>
+<head>
+
+<title>Student Module</title>
+
+
+
+<script type="text/javascript" src="myvalidation.js">
+</script>
+</head>
+
+
+<body>
+<div class="row2">
+
+<h2 align="center">STUDENT REGISTRATION FORM</h2>
+<br>
+  <form name="form" onsubmit="return myvalidation()" method="post">
+
+<table border="1" align="center">
+<tr>
+<td>
+   First name:<font color="red"><sub>*</sub></font></td><td><input type="text" size="20" maxlength="15" name="firstname"/></td>
+
+</tr>
+
+<tr>
+
+  <td>
+    Last name:<font color="red"><sub>*</sub></font></td><td> <input type="text" size="20" maxlength="15" name="lastname" />
+  </td>
+</tr>
+
+<tr>
+
+  <td> Gender:<font color="red"><sub>*</sub></font></td><td><input type="radio" name="sex" value="male" id="s1"/>Male<input type="radio" name="sex" value="female" id="s2"/> Female</td>
+</tr>
+
+<tr>
+
+ <td>
+
+  Address:<font color="red"><sub>*</sub></font>
+ </td>
+
+ <td>
+  <textarea rows="3" cols="16" name="add">
+  </textarea>
+
+ </td>
+
+</tr>
+
+<tr>
+
+ <td>
+
+  City:<font color="red"><sub>*</sub></font>
+ 
+ </td>
+
+ <td>
+
+  <select name="city" id="city">
+ <option selected>Select your City</option>
+  <option value="Banglore">Banglore</option>
+  <option value="Bhuvaneshwar">Bhuvaneshwar</option>
+  <option value="Chennai">Chennai</option>
+  <option value="Delhi">Delhi</option>
+ <option value="Hyderabad">Hyderabad</option>
+  <option value="Tirupathi">Tirupathi</option>
+  <option value="Vijayawada">Vijayawada</option>
+  <option value="Vishakapatnam">Vishakapatnam</option>
+  
+</select>
+</td>
+</tr>
+<tr>
+
+ <td>
+
+  State:<font color="red"><sub>*</sub></font>
+ 
+ </td>
+
+ <td>
+
+  <select name="state" id="state">
+ <option selected>Select your State</option>
+  <option value="Andhra Pradesh">Andhra Pradesh</option>
+  <option value="Assam">Assam</option>
+  <option value="Delhi">Delhi</option>
+  <option value="Odissa">Odissa</option>
+ <option value="Karnataka">Karnataka</option>
+  <option value="Kerala">Kerala</option>
+  <option value="Maharashtra">Maharashtra</option>
+  <option value="Tamil Nadu">Tamil Nadu</option>
+  </select>
+</tr>
+
+<tr>
+<td>Contact No<font color="red"><sub>*</sub></font></td><td><input type="text" size="20" maxlength="10" name="contact"/></td>
+</tr>
+
+<tr>
+<td>E-mail:<font color="red"><sub>*</sub></font></td><td><input type="text" size="20" maxlength="20" name="email"/></td>
+</tr>
+
+<tr>
+  <td>Qualification:<font color="red"><sub>*</sub></font></td><td><input type="radio" name="qualification" value="UGraduation" />UG<input type="radio" name="qualification" value="Graduation" />Graduation</td>
+
+ </tr>
+<tr>
+
+ <td>
+
+  Year Of Graduation:<font color="red"><sub>*</sub></font>
+ 
+ </td>
+
+ <td>
+
+  <select name="year" id="year">
+ <option selected>Select year</option>
+  <option value="I">I</option>
+  <option value="II">II</option>
+  <option value="III">III</option>
+  
+   </select>
+</tr>
+
+<tr>
+
+  <td>Committed amount:<font color="red"><sub>*</sub></font></td>
+
+  <td><select name="amount" id="amount">
+ <option selected>Select amount</option>
+  <option value="1000">1000</option>
+  <option value="2000">2000</option>
+  <option value="3000">3000</option>
+   <option value="4000">4000</option>
+  <option value="5000">5000</option>
+  
+   </select>
+   </td>
+</tr>
+<tr>
+<td>Bank Name:<font color="red"><sub>*</sub></font></td><td>
+<select name="bank" id="bank">
+ <option selected>Select your Bank</option>
+  <option value="SBI">SBI</option>
+  <option value="PNB">PNB</option>
+  <option value="IB">Indian</option>
+  <option value="SYN">Syndicate</option>
+ <option value="OBC">OBC</option>
+  
+   </select>
+</tr>
+
+<tr>
+
+  <td>Account Number:<font color="red"><sub>*</sub></font></td><td><input type="text" size="20" maxlength="12" name="acno"/></td>
+</tr>
+<tr>
+
+  <td>Start Date:<font color="red"><sub>*</sub></font></td><td><input type="text" size="20" maxlength="12" name="start"/></td>
+</tr>
+
+<tr>      
+ <td><br></br></td><td>
+   <input type="submit" value="Submit"/>
+ </td>
+</tr>
+</table>
+</form>
+
+
+
+
+</div>	
+
+</body>
+</html>

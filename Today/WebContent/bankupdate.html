@@ -1,0 +1,42 @@
+<html>
+
+<head>
+<script language="javascript">
+function valid()
+{
+	var id=document.forms["view"]["view"].value;
+	if(id==null || id=="")
+	{
+		alert("ENTER VALID Bank ID");
+	}
+	else
+	{	
+	document.view.action="BankUpdate";
+    document.view.submit();
+}}
+</script>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+<div class="row2">
+
+<p></p>
+
+	
+<br>
+<h1 align="center"><font color="blue">Update Bank Details</font></h1>
+<br>
+<br>
+<br>
+<center>
+<form name="view" onsubmit="return valid()" method="post">
+<b>Enter Bank ID</b>&nbsp;&nbsp;<input type="text" name="view" size="10">
+<input type="submit" value="SUBMIT">
+</form>
+</center>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+
+<head>
+<script language="javascript">
+function valid()
+{
+	var id=document.forms["view"]["view"].value;
+	
+	if(id==null || id=="")
+	{
+		alert("ENTER VALID College ID");
+	}
+	else
+	{	
+	document.view.action="CollegeDetails";
+    document.view.submit();
+}}
+</script>
+
+
+
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="myvalidation.js">
+</script>
+</head>
+<body>
+
+  
+
+
+<div class="row2">
+
+<p></p>
+
+	
+<br>
+<h1 align="center"><font color="blue">view College Details</font></h1>
+<br>
+<br>
+<br>
+<center>
+<form name="view"  onsubmit="return valid()" method="get" >
+<b>Enter College ID</b>&nbsp;&nbsp;<input type="text" name="view" size="10">
+<input type="submit" value="SUBMIT" name="viewbtn">
+</form>
+</center>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<html>
+
+<head>
+<script type="text/javascript">
+function valid()
+{
+	var id=document.forms["view"]["view"].value;
+	if(id==null || id=="")
+	{
+		alert("ENTER VALID STUDENT ID");
+	}
+	else
+	{	
+	document.view.action="StudentDetails";
+    document.view.submit();
+}}
+
+</script>
+
+
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+  
+
+
+<div class="row2">
+
+<p></p>
+
+	
+<br>
+<h1 align="center"><font color="blue">View Student Details</font></h1>
+<br>
+<br>
+<br>
+<center>
+<form name="view"  onsubmit="return valid()" method="get"  >
+<b>Enter Student ID</b>&nbsp;&nbsp;<input type="text" name="view" size="10">
+<input type="submit" value="SUBMIT" >
+</form>
+</center>
+
+</div>
+</body>
+</html>

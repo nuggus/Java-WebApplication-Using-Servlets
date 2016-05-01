@@ -1,0 +1,43 @@
+<html>
+
+<head>
+<script type="text/javascript">
+function valid()
+{
+	var id=document.forms["view"]["view"].value;
+	
+	if(id==null || id=="")
+	{
+		alert("ENTER VALID STUDENT ID");
+		return false;
+	}
+	else
+	{	
+	document.view.action="StudentDelete";
+    document.view.submit();
+}
+}
+
+</script>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+<div class="row2">
+<p></p>
+	
+<br>
+<h1 align="center"><font color="blue">Delete Student Details</font></h1>
+<br>
+<br>
+<br>
+<center>
+<form name="view" onsubmit="return valid()" method="post">
+<b>Enter Student ID</b>&nbsp;&nbsp;<input type="text" name="view" size="10">
+<input type="submit" value="DELETE" >
+</form>
+</center>
+
+</div>
+</body>
+</html>
